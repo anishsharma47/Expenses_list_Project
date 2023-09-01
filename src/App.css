@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: SF Pro Display;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+@import "./styles/header.scss";
+@import "./styles/popupmenu.scss";
+@import "./styles/home.scss";
+@import "./styles/noitem.scss";
+@import "./styles/footer.scss";

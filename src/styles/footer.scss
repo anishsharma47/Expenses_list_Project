@@ -1,0 +1,49 @@
+.footer{
+    width: 100%;
+    min-height: 10vh;
+    background-color:#031636 ;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    >.footer_left{ 
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: capitalize;
+        gap: 10px;
+
+        >.devloper{
+         font-size: 3vw;
+
+        }
+        >.dev_name{
+            font-size: 1.5vw;
+
+        }
+    }
+
+    >.footer_right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+        flex-direction: column;
+        text-transform: capitalize;
+
+        >.follow{
+            font-size: 3vw;
+        }
+
+        >.icons{
+            font-size: 2vw;
+            display: flex;
+            gap: 20px;
+            >a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}

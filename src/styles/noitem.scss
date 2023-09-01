@@ -1,0 +1,13 @@
+.noitem {
+  background-color: white;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  > .title {
+    font-size: 5vw;
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+}
