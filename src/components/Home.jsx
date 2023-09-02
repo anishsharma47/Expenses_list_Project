@@ -30,7 +30,7 @@ const Home = () => {
 
       {listData.length !== 0 ? (
         <>
-          <button onClick={() => setlistData([])}>remove all</button>
+          <button onClick={() => setlistData([]) || setTotalAmount(0)}>remove all</button>
           <div className="home_main_container">
             {listData &&
               listData.map((item, index) => (
