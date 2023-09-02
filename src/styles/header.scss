@@ -1,5 +1,5 @@
 .header {
- background-color: #031636;
+  background-color: #031636;
   width: 100%;
   height: 100px;
   display: flex;
@@ -27,59 +27,45 @@
   }
 }
 
-@media (max-width:900px) {
+@media (max-width: 900px) {
   .header {
-  
-     > h1 {
-       font-size: 7vw;
-       color: white;
-     }
-   
-     > button {
-   
-       font-size: 2.5vw;
-       padding: 10px;
-       border-radius: 10px;
-      
-       &:hover {
-         background-color: rgb(114, 114, 211);
-       }
-     }
-   }
-  
+    > h1 {
+      font-size: 7vw;
+      color: white;
+    }
+
+    > button {
+      font-size: 2.5vw;
+      padding: 10px;
+      border-radius: 10px;
+
+      &:hover {
+        background-color: rgb(114, 114, 211);
+      }
+    }
+  }
 }
 
-@media (max-width:600px) {
-
+@media (max-width: 600px) {
   .header {
-    background-color: #031636;
-     width: 100%;
-     height: 100px;
-     display: flex;
-     justify-content: space-between;
-     padding: 0 10vw;
-     align-items: center;
-     > h1 {
-       font-size: 10vw;
-       color: white;
-     }
-   
-     > button {
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       cursor: pointer;
-       color: black;
-       font-size: 3vw;
-       padding: 10px;
-       border-radius: 10px;
-       border: none;
-       &:hover {
-         background-color: rgb(114, 114, 211);
-       }
-     }
-   }
-  
+    > h1 {
+      font-size: 10vw;
+      color: white;
+    }
+
+    > button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      color: black;
+      font-size: 3vw;
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      &:hover {
+        background-color: rgb(114, 114, 211);
+      }
+    }
+  }
 }
-
-

@@ -7,11 +7,11 @@ const Home = () => {
     useGlobalContext();
 
   useEffect(() => {
-    localStorage.setItem("listData", JSON.stringify(listData));
+    localStorage.setItem("ExpenseList", JSON.stringify(listData));
   }, [listData]);
 
   useEffect(() => {
-    localStorage.setItem("totalAmount", JSON.stringify(totalAmount));
+    localStorage.setItem("sumofamount", JSON.stringify(totalAmount));
   }, [totalAmount]);
 
   function removieItem(item, index) {
@@ -20,7 +20,7 @@ const Home = () => {
     });
     setlistData(updatedItem);
     setTotalAmount(
-      0 <= totalAmount - item.input2 ? totalAmount - item.input2 : 0
+      totalAmount - item.input2 
     );
   }
 
