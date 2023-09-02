@@ -1,49 +1,82 @@
-.footer{
-    width: 100%;
-    min-height: 10vh;
-    background-color:#031636 ;
-    color: white;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.footer {
+  width: 100%;
+  min-height: 10vh;
+  background-color: #031636;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
-    >.footer_left{ 
+  > .footer_left {
+    height: 100%;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    gap: 10px;
+    > .devloper {
+      font-size: 3vw;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    > .dev_name {
+      font-size: 2.5vw;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  > .footer_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    text-transform: capitalize;
+
+    > .follow {
+      font-size: 3vw;
+    }
+
+    > .icons {
+      font-size: 2vw;
+      display: flex;
+      gap: 20px;
+      > a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .footer {
+    > .footer_left {
+      > .devloper {
+        font-size: 5vw;
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        text-transform: capitalize;
-        gap: 10px;
-
-        >.devloper{
-         font-size: 3vw;
-
-        }
-        >.dev_name{
-            font-size: 1.5vw;
-
-        }
+      }
+      > .dev_name {
+        font-size: 4vw;
+      }
     }
 
-    >.footer_right{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      
-        flex-direction: column;
-        text-transform: capitalize;
+    > .footer_right {
+      > .follow {
+        font-size: 5vw;
+      }
 
-        >.follow{
-            font-size: 3vw;
-        }
-
-        >.icons{
-            font-size: 2vw;
-            display: flex;
-            gap: 20px;
-            >a{
-                text-decoration: none;
-                color: white;
-            }
-        }
+      > .icons {
+        font-size: 4vw;
+      }
     }
+  }
 }

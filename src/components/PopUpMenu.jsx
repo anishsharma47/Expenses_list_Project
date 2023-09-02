@@ -12,6 +12,7 @@ const PopUpMenu = () => {
     options,
     dropdown_field,
   } = useGlobalContext();
+  const [error, setError] = useState(false);
 
   function subHandler() {
     saveData();
@@ -49,15 +50,26 @@ const PopUpMenu = () => {
           value={expanse}
           onChange={(e) => setexpanse(e.target.value)}
           type="text"
+          placeholder="enter expense title"
         />
 
         <label className="label">expense amount</label>
         <input
           className="input_field"
-          value={amount}
-          onChange={(e) => setAmount(Number(e.target.value))}
+          value={amount !== 0 ? amount : ""}
+          onChange={(e) =>
+            setAmount(
+              Number(e.target.value < 0 ? setError(true) : e.target.value)
+            )
+          }
           type="number"
+          placeholder="enter amount"
         />
+        {error && (
+          <div className="error" style={{ color: "red", fontSize: "2vw" }}>
+            please enter positive number{" "}
+          </div>
+        )}
 
         <button className="btn" onClick={(e) => subHandler(e)}>
           save

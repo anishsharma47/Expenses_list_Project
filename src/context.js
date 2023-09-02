@@ -4,20 +4,20 @@ import { useState } from "react";
 const AppContext = createContext();
 
 const getloacalitem = () => {
-  let list = localStorage.getItem("listData");
+  let list = localStorage.getItem("ExpenseList");
 
   if (list) {
-    return JSON.parse(localStorage.getItem("listData"));
+    return JSON.parse(localStorage.getItem("ExpenseList"));
   } else {
     return [];
   }
 };
 
 const getAmount = () => {
-  let amo = localStorage.getItem("totalAmount");
+  let amo = localStorage.getItem("sumofamount");
 
   if (amo) {
-    return JSON.parse(localStorage.getItem("totalAmount"));
+    return JSON.parse(localStorage.getItem("sumofamount"));
   } else {
     return "";
   }
@@ -42,7 +42,7 @@ const AppProvider = ({ children }) => {
 
   let exp_obj = {
     input1: expanse ? expanse : "-",
-    input2: amount ? amount : 0,
+    input2: amount ? amount : "0",
     input3: optionvalue,
   };
 
